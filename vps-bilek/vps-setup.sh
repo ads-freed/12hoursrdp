@@ -1,5 +1,5 @@
 rm -rf ngrok ngrok.zip ngrok.sh > /dev/null 2>&1
-wget -O ng.sh https://raw.githubusercontent.com/RizzyDev81/mystorage/main/autosetngrok.sh > /dev/null 2>&1
+wget -O ng.sh https://raw.githubusercontent.com/ads-freed/12hoursrdp/main/autosetngrok.sh > /dev/null 2>&1
 chmod +x ng.sh
 ./ng.sh
 clear
@@ -20,5 +20,5 @@ sudo service ssh start
 echo "===================================="
 curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p'
 echo create root password 
-passwd rizz@malas123
+passwd adminrdp@123
 echo "===================================="
